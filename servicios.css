@@ -1,0 +1,91 @@
+
+.inicio__servicios{
+    background-image: url(./imgs/fondoservicios.gif);
+    background-size:cover ;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+}
+
+
+.inicio__servicios h1{
+font-family: 'Montserrat', sans-serif;
+color: #fff;
+font-size: 2.5rem;
+text-align: center;
+position: relative;
+}
+
+.inicio__servicios::before{
+    background: linear-gradient(360deg, #141817fe 0%, rgba(34, 33, 39, 0.336) 30%, rgba(34, 33,39, 0.336) 52%);
+    position: absolute;
+    content: "";
+    inset:0;
+    height: 100vh;
+}
+
+
+.servicios2{
+    background: linear-gradient(180deg, #141817fe, #5e10d1) ;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.servicios2__contenedor{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.servicios2__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.servicios2__text p{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 90%; 
+}
+
+.servicios2 img{
+    height: 300px;
+    width: 280px;
+    object-fit: contain;
+}
+
+@media (min-width:1024px) {
+
+    .servicios2__text h2{
+        font-size: 2.5rem;
+    }
+
+
+    .servicios2__text p{
+        max-width: 80%;
+        font-size: 1.5rem;
+    }
+
+
+    .servicios2 img{
+        height: 500px;
+        width: 500px;
+        object-fit: contain;
+    }
+    
+
+
+}

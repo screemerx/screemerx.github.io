@@ -1,0 +1,583 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  scroll-behavior: smooth;
+}
+
+
+
+
+/* HEADER */
+
+.header {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-block: 30px;
+    z-index: 1;
+    
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+.logo img {
+    width: 53px;
+}
+
+.logo__titulo{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: #ffff;
+    padding-left: 1rem;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none; 
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 5rem;
+
+}
+
+
+.panel-btn{
+    display: none;
+}
+
+.link__item{
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.2rem;
+    padding-left:1rem ;
+    transition: .3s;
+    position: relative
+}
+
+a.link__item:hover:after {
+  width: 100%;
+}
+
+a.link__item:after {
+  background-color: white;
+  position: absolute;
+  content: "";
+  height: 3px;
+  left: 8px;
+  width: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+/* INICIO */
+
+.inicio{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./imgs/bodybg.png);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inicio__titulo{
+    font-family: 'Bebas Neue', cursive;
+   font-size: 3rem;
+   color: #ffff;
+   position: absolute;
+   text-align: center;
+   width: 85%;
+}
+
+
+
+.inicio::before{
+  background: linear-gradient(360deg, #141817fe 0%, rgba(34, 33, 39, 0.336) 30%, rgba(34, 33,39, 0.336) 52%);
+    position: absolute;
+    content: "";
+    inset:0;
+    height: 100vh;
+}
+
+/* NOSOTROS */
+
+.nosotros{
+ background-color: #141817fe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nosotros__titulo{
+  padding-top: 3rem;
+  color: #ffff;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2rem;
+  text-align: center;
+  max-width: 290px;
+}
+
+
+
+.nosotros__titulo span{
+  color: #4c1c7c;
+  
+}
+
+.nosotros__img{
+  width: 300px;
+  height: 300px;
+}
+
+.nosotros__texto{
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  color: #ffff;
+  text-align: center;
+
+  
+font-family: 'Montserrat', sans-serif;
+}
+
+.nosotros__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* NUESTROS PROYECTOS */
+
+
+.clientes {
+  background-color: #141817fe;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+
+}
+.clientes h2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.slider__element {
+  padding: 1.5rem 2rem 2.5rem 2rem;
+}
+
+.slider__element img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain ;
+}
+
+
+/* CONTADOR */
+
+
+.wrapper{
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+ 
+}
+
+.container__contador {
+  width: 100%;
+  position: relative;
+  font-size: 8px;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  box-shadow: inset -15px 17px 20px 11px #010101;
+  border-radius: 5px;
+}
+
+
+
+.num{
+  font-size:2rem ;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 600;
+  text-shadow: -9px 8px 6px #000000;
+}
+
+.text{
+  text-align: center;
+}
+
+.contador__simbolo{
+  font-size: 2rem;
+  text-shadow: -9px 8px 6px #000000;
+  
+}
+
+.contador__simbolo--sincolor{
+  font-size: 2rem;
+  color: transparent;
+}
+
+.contador__simbolo--porcentaje{
+  font-size: 1.7rem;
+  text-shadow: -9px 8px 6px #000000;
+}
+
+/* SERVICIOS */
+
+.servicios__contenedor{
+background: #010101;
+background: -webkit-radial-gradient(top right, #010101, #4C1D7C);
+background: -moz-radial-gradient(top right, #010101, #4C1D7C);
+background: radial-gradient(to bottom left, #010101, #4C1D7C);
+position: relative;
+display: flex;
+flex-direction: column;
+font-family: 'Montserrat', sans-serif;
+align-items: center;
+padding-bottom: 2rem;
+}
+
+.servicios__contenedor::before{
+  background: linear-gradient(180deg, #141817 0%, rgba(21, 25, 24, 0.351) 60%, rgba(21, 25, 24, 0.351) 100%);
+  position: absolute;
+  content: "";
+  inset:0;
+}
+
+.seccion__servicio{
+  color: #ffff;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 4rem;
+  grid-gap: 3rem;
+  position: relative;
+}
+
+.servicios__cajas{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.servicios__cajas img{
+  width: 80px;
+  height: 80px;
+}
+
+.seccion__servicio p{
+text-align: center;
+padding: 2rem 1rem;
+}
+
+
+.servicios__titulo{
+  color:#ffff;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  position: relative;
+ font-family: 'Bebas Neue', cursive;
+ padding-top: 2rem;
+}
+
+
+
+
+
+
+/* BUTTON SERVICIOS */
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+  text-decoration: none;
+  
+ }
+ 
+ .btn-1 {
+  background: rgb(96,9,240);
+  background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ 
+ .btn-1:before {
+  height: 0%;
+  width: 2px;
+ }
+ 
+ .btn-1:hover {
+  box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+               -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+     inset -4px -4px 6px 0 rgba(255,255,255,.2),
+     inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+ }
+ 
+/* FOOTER */
+.linea {
+    border-top: 1px solid #ffff;
+    height: 2px;
+    padding: 0;
+  }
+
+
+.footer__general{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background-color:  #141817;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffff;
+   
+}
+
+.footer__2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start ;
+    
+}
+
+.footer__redes{
+display: flex;
+padding: 1rem;
+font-size: 0.8rem;
+}
+
+.footer__contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    
+}
+
+.footer__redes h3{
+    padding: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    }
+
+
+.footer__politicas{
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+
+
+.footer__copy{
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+}
+
+
+
+
+/* MEDIAS */
+
+
+
+
+
+
+@media (max-width: 991px) {
+
+
+   .panel {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.822);
+        transition: transform 1s ease;
+        transform: translate(0, 100%);
+      }
+    
+      .panel.is-active {
+        transform: translate(0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+    .panel-btn {
+        display: block ;
+        position: fixed;
+        z-index:  999;
+        bottom: 1vh;
+        right: 1vh;
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        background-color: #ffffffc6;
+      }
+
+    .hamburger-box {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 16px;}
+
+
+    .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+        width: 30px;
+        height: 4px;
+    }
+
+
+
+      .header__nav {
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+      }
+
+      .link__item {
+        padding: 2rem;
+        width: inherit;
+        display: block;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: white;
+        transition: all 0.3 ease;
+      }
+
+    }
+  
+   
+
+    /* 
+      MEDIAS QUERIES
+    */
+
+
+    @media (min-width:768px) {
+      /* NOSOTROS */
+      .nosotros__titulo{
+        max-width: 700px;
+        font-size: 2.5rem;
+      }
+
+    }
+
+   
+  @media (min-width:800px) {
+    /* NOSOTROS */
+    
+    .nosotros__info {
+      padding: 2.5rem;
+      width: 90%;
+      flex-direction: row;
+    }
+
+    /* SERVICIOS */
+    .seccion__servicio {
+      grid-template-columns: 1fr 1fr;
+      width: 90%;
+      gap: 5rem;
+  }
+
+
+  .servicios__titulo{
+    font-size: 3rem;
+  }
+
+
+
+  /* CONTADOR */
+
+  .wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 5rem;
+  }
+
+  .num{
+    font-size:3rem ;
+  }
+
+ 
+
+
+}
+
+  
+  @media (min-width:1024px) {
+
+.contenedor{
+  justify-content: space-between;
+}
+
+
+/* SERVICIOS */
+
+.servicios__titulo{
+  font-size: 4rem;
+}
+
+
+
+  /* FOOTER */
+   .footer__2{
+    flex-direction: row;
+    justify-content: space-around;
+   }
+
+  }
